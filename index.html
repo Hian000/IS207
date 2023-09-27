@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>21522140</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <nav>
+        <a href="#info">Giới thiệu bản thân</a>
+        <a href="#contact">Giao lưu</a>
+    </nav>
+
+    <div id="info">
+        <h1>Giới thiệu bản thân</h1>
+       
+        <img id="avatar" src="https://i.pinimg.com/736x/5d/22/e8/5d22e861874605e630f7ee7537b29602.jpg" alt="My avatar">
+   
+        <h2>Thông tin cơ bản</h2>
+        <ul>
+            <li>Tên : Hồ Nhật Huy</li>
+            <li>Năm sinh : 2003</li>
+            <li>Chuyên ngành : Công nghệ thông tin</li>
+        </ul>
+        <h2>Sở thích</h2>
+        <h3>Món ăn</h3>
+        <ol>
+            <li>Bánh bao</li>
+        <li>Kem tươi</li>
+        <li>Cafe muối</li>
+        </ol>
+        <h3>Giải trí</h3>
+        <h4>Trò chơi</h4>
+        <ul>
+            <li>Bóng đá</li>
+            <li>Bóng chuyền</li>
+            <li>Liên minh Huyền thoại</li>
+        </ul>
+        <h4>Bài nhạc yêu thích</h4>
+        <ul>
+            <li>Chúng ta của hiện tại - Sơn Tùng MTP</li>
+            <li>Sunflower - Post Malone</li>
+            <li>Locked Away - Adam Levine</li>
+        </ul>
+        <h2>Mục tiêu của bản thân</h2>
+        <table class="target">
+            <tr>
+                <th>Mục tiêu</th>
+                <th>Thời hạn</th>
+                <th>Hoàn thành</th>
+            </tr>
+            <tr>
+                <td>Trung bình điểm môn web đạt 8.0</td>
+                <td>DD/MM/YYYY</td>
+                <td> <input type="checkbox"></td>
+            </tr>
+            <tr>
+                <td>Đạt IELTS 8.0</td>
+                <td>DD/MM/YYYY</td>
+                <td> <input type="checkbox"></td>
+            </tr>
+            <tr>
+                <td>Thực tập tại Google</td>
+                <td>DD/MM/YYYY</td>
+                <td> <input type="checkbox"></td>
+            </tr>
+        </table>
+    </div>
+<div id="contact">
+    <h1>Gửi thông tin và giao lưu cùng tôi</h1>
+    <form action="none">
+        <label for="name">Họ và tên : </label>
+        <input type="text" name="name" id="input_name">
+        <br>
+        <label for="email">Email : </label>
+        <input type="text" name="email" id="input_email">
+        <br>
+        <label for="message">Tin nhắn : </label>
+        <br>
+        <input type="text" name="message" id="input_mess">
+        <br>
+        <label for="gender">Giới tính : </label>
+        <br>
+        <input type="radio" name="gender" id="male" value="Nam">
+        <label for="male">Nam</label>
+        <input type="radio" name="gender" id="female" value="Nữ">
+        <label for="female">Nữ</label>
+        <br>
+        
+        <label for="hobby">Sở thích : </label> <br>
+        <input type="checkbox" name="" id="hobby_checkbox">
+        <label for="">Nghe nhạc</label>
+        <input type="checkbox" name="" id="hobby_checkbox">
+        <label for="">Chơi game</label>
+        <input type="checkbox" name="" id="hobby_checkbox">
+        <label for="">Đá bóng</label>
+        <input type="checkbox" name="" id="hobby_checkbox">
+        <label for="">Khác</label>
+        <input type="text" name="other_hobby" id="input_hobby">
+        <br>
+        <label for="majors">Ngành : </label>
+        <select name="majors" id="majors_select">
+            <option value="">Khoa học máy tính</option>
+            <option value="">Hệ thống thông tin</option>
+            <option value="">Mạng máy tính</option>
+            <option value="">Khoa học dữ liệu</option>
+            <option value="">Khoa học và kĩ thuật thông tin</option>
+        </select>
+        <br>
+        <button>Gửi</button>
+    </form>
+</div>
+<footer>
+    <p>@2023 21522140 Hồ Nhật Huy</p>
+</footer>
+</body>
+</html>
