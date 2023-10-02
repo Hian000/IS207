@@ -1,226 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>UIT Shop</title>
-    <link rel="stylesheet" href="./style.css" />
-  </head>
-  <body>
-    <nav>
-      <div class="nav_container">
-        <a href="home">
-          <img
-            id="logo"
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Logo_UIT_updated.svg/800px-Logo_UIT_updated.svg.png"
-            alt="Logo"
-          />
-        </a>
-        <div class="anchor">
-          <a href="#home">Trang chủ</a>
-          <a href="#uniform">Đồng phục UIT</a>
-          <a href="#f_shirt">Áo khoa</a>
-          <a href="#accessories">Phụ kiện</a>
-          <a href="#contact">Liên hệ</a>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UIT Shop</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <nav>
+    <div class="nav_container">
+      <a href="#">
+        <img id="logo"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Logo_UIT_updated.svg/800px-Logo_UIT_updated.svg.png"
+          alt="Logo" />
+      </a>
+      <div class="anchor">
+        <a href="#home">Trang chủ</a>
+        <a href="#uniform">Đồng phục UIT</a>
+        <a href="#f_shirt">Áo khoa và CLB</a>
+        <a href="#accessories">Phụ kiện</a>
+        <a href="#contact">Liên hệ</a>
+      </div>
+    </div>
+  </nav>
+  <main>
+    <div id="home">
+      <img id="banner"
+        src="https://tuyensinh.uit.edu.vn/sites/default/files/uploads/images/202002/ccc4934c-e3c5-4489-99bc-af7389ade0fb.jpeg"
+        alt="" />
+    </div>
+    <div class="container" id="uniform">
+      <h2>Đồng phục UIT</h2>
+      <div class="item_container">
+        <div class="item">
+          <div class="item_img">
+            <img
+              src="https://dongphuchaianh.vn/wp-content/uploads/2022/02/dong-phuc-uit-hoc-vien.jpg"
+              alt="" />
+          </div>
+          <h3>Áo UIT trắng</h3>
+          <p>
+            Giá sản phẩm : <strong>99.000<sup>đ</sup> </strong>
+          </p>
+        </div>
+        <div class="item">
+          <div class="item_img">
+            <img
+              src="data:image/jpeg;base64,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"
+              alt="" />
+          </div>
+          <h3>Áo UIT tím</h3>
+          <p>
+            Giá sản phẩm : <strong>99.000<sup>đ</sup> </strong>
+          </p>
+        </div>
+
+        <div class="item">
+          <div class="item_img">
+            <img
+              src="https://tuyensinh.uit.edu.vn/sites/default/files/uploads/images/thumbs/202210/3034ab2a-7c2c-48a3-8463-4e5ad420065e.jpeg"
+              alt="" />
+          </div>
+          <h3>Áo UIT trắng xanh</h3>
+          <p>
+            Giá sản phẩm : <strong>99.000<sup>đ</sup> </strong>
+          </p>
+        </div>
+
+
+      </div>
+    </div>
+    <div class="container" id="f_shirt">
+      <h2>Áo khoa và Câu lạc bộ</h2>
+      <div class="item_container">
+        <div class="item">
+          <div class="item_img">
+            <img
+              src="https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2.0,f_auto,g_center,h_250,q_auto:good,w_250/v1/gcs/platform-data-dsc/events/DSCF2920%202.JPG"
+              alt="" />
+          </div>
+          <h3>Áo CLB GDSC - UIT</h3>
+          <p>
+            Giá sản phẩm : <strong>199.000<sup>đ</sup> </strong>
+          </p>
+        </div>
+        <div class="item">
+          <div class="item_img">
+            <img
+              src="https://cdn.haitrieu.com/wp-content/uploads/2022/01/hinh-anh-thuc-te-ao-thun-uit-open-english-club.png"
+              alt="" />
+          </div>
+          <h3>Áo CLB Open English Club UIT</h3>
+          <p>
+            Giá sản phẩm : <strong>99.000<sup>đ</sup> </strong>
+          </p>
+        </div>
+        <div class="item">
+          <div class="item_img">
+            <img
+              src="https://webdevstudios.org/_next/static/image/public/generations/GEN3/Dung.c4d16fcc182f121a78a76efefa67c908.webp"
+              alt="" />
+          </div>
+          <h3>Áo CLB Webdev Studio</h3>
+          <p>
+            Giá sản phẩm : <strong>99.000<sup>đ</sup> </strong>
+          </p>
+        </div>
+        <div class="item">
+          <div class="item_img">
+            <img
+              src="https://httt.uit.edu.vn/wp-content/uploads/2020/11/IS-UIT-0030.jpg"
+              alt="" />
+          </div>
+          <h3>Áo khoa Hệ thống thông tin</h3>
+          <p>
+            Giá sản phẩm : <strong>99.000<sup>đ</sup> </strong>
+          </p>
+        </div>
+        <div class="item">
+          <div class="item_img">
+            <img
+              src="https://scontent.fsgn5-9.fna.fbcdn.net/v/t1.6435-9/120651515_3608445709208367_3505002602247817327_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=730e14&_nc_ohc=Eau9fMspJb8AX_2rB4W&_nc_ht=scontent.fsgn5-9.fna&oh=00_AfASThZFGtUHyBv8xMl11a0m2OIkmV191v9QmSUDvke2ng&oe=654048AB"
+              alt="" />
+          </div>
+          <h3>Áo khoa Mạng máy tính</h3>
+          <p>
+            Giá sản phẩm : <strong>99.000<sup>đ</sup> </strong>
+          </p>
+        </div>
+        
+      </div>
+    </div>
+    <div class="container" id="accessories">
+      <h2>Phụ kiện</h2>
+      <div class="item_container">
+        <div class="item">
+          <div class="item_img">
+            <img
+              src="data:image/jpeg;base64,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"
+              alt="" />
+          </div>
+          <h3>Mũ bảo hiểm UIT</h3>
+          <p>
+            Giá sản phẩm : <strong>299.000<sup>đ</sup> </strong>
+          </p>
+        </div>
+        <div class="item">
+          <div class="item_img">
+            <img
+              src="data:image/jpeg;base64,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"
+              alt="" />
+          </div>
+          <h3>Dây đeo và bao thẻ UIT</h3>
+          <p>
+            Giá sản phẩm : <strong>29.000<sup>đ</sup> </strong>
+          </p>
+        </div>
+
+        <div class="item">
+          <div class="item_img">
+            <img
+              src="https://www.uit.edu.vn/sites/vi/files/uploads/images/thumbs/202204/nhan_qua.jpg"
+              alt="" />
+          </div>
+          <h3>Cặp UIT viền vàng</h3>
+          <p>
+            Giá sản phẩm : <strong>199.000<sup>đ</sup> </strong>
+          </p>
         </div>
       </div>
-    </nav>
-    <main>
-      <div id="home">
-        <img
-          id="banner"
-          src="https://tuyensinh.uit.edu.vn/sites/default/files/uploads/images/202002/ccc4934c-e3c5-4489-99bc-af7389ade0fb.jpeg"
-          alt=""
-        />
-      </div>
-      <div class="container" id="uniform">
-        <h2>Đồng phục UIT</h2>
-        <div class="item_container">
-          <div class="item">
-            <div class="item_img">
-              <img
-                src="https://scontent.fsgn5-9.fna.fbcdn.net/v/t1.6435-9/120651515_3608445709208367_3505002602247817327_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=730e14&_nc_ohc=Eau9fMspJb8AX_2rB4W&_nc_ht=scontent.fsgn5-9.fna&oh=00_AfASThZFGtUHyBv8xMl11a0m2OIkmV191v9QmSUDvke2ng&oe=654048AB"
-                alt=""
-              />
-            </div>
-            <h3>Áo khoa mạng máy tính</h3>
-            <p>
-              Giá sản phẩm : <strong>99.000<sup>đ</sup> </strong>
-            </p>
-          </div>
-          <div class="item">
-            <div class="item_img">
-              <img
-                src="https://scontent.fsgn5-9.fna.fbcdn.net/v/t1.6435-9/120651515_3608445709208367_3505002602247817327_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=730e14&_nc_ohc=Eau9fMspJb8AX_2rB4W&_nc_ht=scontent.fsgn5-9.fna&oh=00_AfASThZFGtUHyBv8xMl11a0m2OIkmV191v9QmSUDvke2ng&oe=654048AB"
-                alt=""
-              />
-            </div>
-            <h3>Áo khoa mạng máy tính</h3>
-            <p>
-              Giá sản phẩm : <strong>99.000<sup>đ</sup> </strong>
-            </p>
-          </div>
-          <div class="item">
-            <div class="item_img">
-              <img
-                src="https://scontent.fsgn5-9.fna.fbcdn.net/v/t1.6435-9/120651515_3608445709208367_3505002602247817327_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=730e14&_nc_ohc=Eau9fMspJb8AX_2rB4W&_nc_ht=scontent.fsgn5-9.fna&oh=00_AfASThZFGtUHyBv8xMl11a0m2OIkmV191v9QmSUDvke2ng&oe=654048AB"
-                alt=""
-              />
-            </div>
-            <h3>Áo khoa mạng máy tính</h3>
-            <p>
-              Giá sản phẩm : <strong>99.000<sup>đ</sup> </strong>
-            </p>
-          </div>
-          <div class="item">
-            <div class="item_img">
-              <img
-                src="https://scontent.fsgn5-9.fna.fbcdn.net/v/t1.6435-9/120651515_3608445709208367_3505002602247817327_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=730e14&_nc_ohc=Eau9fMspJb8AX_2rB4W&_nc_ht=scontent.fsgn5-9.fna&oh=00_AfASThZFGtUHyBv8xMl11a0m2OIkmV191v9QmSUDvke2ng&oe=654048AB"
-                alt=""
-              />
-            </div>
-            <h3>Áo khoa mạng máy tính</h3>
-            <p>
-              Giá sản phẩm : <strong>99.000<sup>đ</sup> </strong>
-            </p>
-          </div>
-          <div class="item">
-            <div class="item_img">
-              <img
-                src="https://scontent.fsgn5-9.fna.fbcdn.net/v/t1.6435-9/120651515_3608445709208367_3505002602247817327_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=730e14&_nc_ohc=Eau9fMspJb8AX_2rB4W&_nc_ht=scontent.fsgn5-9.fna&oh=00_AfASThZFGtUHyBv8xMl11a0m2OIkmV191v9QmSUDvke2ng&oe=654048AB"
-                alt=""
-              />
-            </div>
-            <h3>Áo khoa mạng máy tính</h3>
-            <p>
-              Giá sản phẩm : <strong>99.000<sup>đ</sup> </strong>
-            </p>
-          </div>
-          <div class="item">
-            <div class="item_img">
-              <img
-                src="https://scontent.fsgn5-9.fna.fbcdn.net/v/t1.6435-9/120651515_3608445709208367_3505002602247817327_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=730e14&_nc_ohc=Eau9fMspJb8AX_2rB4W&_nc_ht=scontent.fsgn5-9.fna&oh=00_AfASThZFGtUHyBv8xMl11a0m2OIkmV191v9QmSUDvke2ng&oe=654048AB"
-                alt=""
-              />
-            </div>
-            <h3>Áo khoa mạng máy tính</h3>
-            <p>
-              Giá sản phẩm : <strong>99.000<sup>đ</sup> </strong>
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="container" id="f_shirt">
-        <h2>Áo khoa</h2>
-        <div class="item_container">
-          <div class="item">
-            <div class="item_img">
-              <img
-                src="https://scontent.fsgn5-9.fna.fbcdn.net/v/t1.6435-9/120651515_3608445709208367_3505002602247817327_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=730e14&_nc_ohc=Eau9fMspJb8AX_2rB4W&_nc_ht=scontent.fsgn5-9.fna&oh=00_AfASThZFGtUHyBv8xMl11a0m2OIkmV191v9QmSUDvke2ng&oe=654048AB"
-                alt=""
-              />
-            </div>
-            <h3>Áo khoa mạng máy tính</h3>
-            <p>
-              Giá sản phẩm : <strong>99.000<sup>đ</sup> </strong>
-            </p>
-          </div>
-          <div class="item">
-            <div class="item_img">
-              <img
-                src="https://scontent.fsgn5-9.fna.fbcdn.net/v/t1.6435-9/120651515_3608445709208367_3505002602247817327_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=730e14&_nc_ohc=Eau9fMspJb8AX_2rB4W&_nc_ht=scontent.fsgn5-9.fna&oh=00_AfASThZFGtUHyBv8xMl11a0m2OIkmV191v9QmSUDvke2ng&oe=654048AB"
-                alt=""
-              />
-            </div>
-            <h3>Áo khoa mạng máy tính</h3>
-            <p>
-              Giá sản phẩm : <strong>99.000<sup>đ</sup> </strong>
-            </p>
-          </div>
-          <div class="item">
-            <div class="item_img">
-              <img
-                src="https://scontent.fsgn5-9.fna.fbcdn.net/v/t1.6435-9/120651515_3608445709208367_3505002602247817327_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=730e14&_nc_ohc=Eau9fMspJb8AX_2rB4W&_nc_ht=scontent.fsgn5-9.fna&oh=00_AfASThZFGtUHyBv8xMl11a0m2OIkmV191v9QmSUDvke2ng&oe=654048AB"
-                alt=""
-              />
-            </div>
-            <h3>Áo khoa mạng máy tính</h3>
-            <p>
-              Giá sản phẩm : <strong>99.000<sup>đ</sup> </strong>
-            </p>
-          </div>
-          <div class="item">
-            <div class="item_img">
-              <img
-                src="https://scontent.fsgn5-9.fna.fbcdn.net/v/t1.6435-9/120651515_3608445709208367_3505002602247817327_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=730e14&_nc_ohc=Eau9fMspJb8AX_2rB4W&_nc_ht=scontent.fsgn5-9.fna&oh=00_AfASThZFGtUHyBv8xMl11a0m2OIkmV191v9QmSUDvke2ng&oe=654048AB"
-                alt=""
-              />
-            </div>
-            <h3>Áo khoa mạng máy tính</h3>
-            <p>
-              Giá sản phẩm : <strong>99.000<sup>đ</sup> </strong>
-            </p>
-          </div>
-          <div class="item">
-            <div class="item_img">
-              <img
-                src="https://scontent.fsgn5-9.fna.fbcdn.net/v/t1.6435-9/120651515_3608445709208367_3505002602247817327_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=730e14&_nc_ohc=Eau9fMspJb8AX_2rB4W&_nc_ht=scontent.fsgn5-9.fna&oh=00_AfASThZFGtUHyBv8xMl11a0m2OIkmV191v9QmSUDvke2ng&oe=654048AB"
-                alt=""
-              />
-            </div>
-            <h3>Áo khoa mạng máy tính</h3>
-            <p>
-              Giá sản phẩm : <strong>99.000<sup>đ</sup> </strong>
-            </p>
-          </div>
-          <div class="item">
-            <div class="item_img">
-              <img
-                src="https://scontent.fsgn5-9.fna.fbcdn.net/v/t1.6435-9/120651515_3608445709208367_3505002602247817327_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=730e14&_nc_ohc=Eau9fMspJb8AX_2rB4W&_nc_ht=scontent.fsgn5-9.fna&oh=00_AfASThZFGtUHyBv8xMl11a0m2OIkmV191v9QmSUDvke2ng&oe=654048AB"
-                alt=""
-              />
-            </div>
-            <h3>Áo khoa mạng máy tính</h3>
-            <p>
-              Giá sản phẩm : <strong>99.000<sup>đ</sup> </strong>
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="container" id="accessories">
-        <h2>Phụ kiện</h2>
-        <div class="item_container">
-          <div class="item">
-            <div class="item_img">
-              <img
-                src="https://scontent.fsgn5-9.fna.fbcdn.net/v/t1.6435-9/120651515_3608445709208367_3505002602247817327_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=730e14&_nc_ohc=Eau9fMspJb8AX_2rB4W&_nc_ht=scontent.fsgn5-9.fna&oh=00_AfASThZFGtUHyBv8xMl11a0m2OIkmV191v9QmSUDvke2ng&oe=654048AB"
-                alt=""
-              />
-            </div>
-            <h3>Áo khoa mạng máy tính</h3>
-            <p>
-              Giá sản phẩm : <strong>99.000<sup>đ</sup> </strong>
-            </p>
-          </div>
-          <div class="item">
-            <div class="item_img">
-              <img
-                src="https://scontent.fsgn5-9.fna.fbcdn.net/v/t1.6435-9/120651515_3608445709208367_3505002602247817327_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=730e14&_nc_ohc=Eau9fMspJb8AX_2rB4W&_nc_ht=scontent.fsgn5-9.fna&oh=00_AfASThZFGtUHyBv8xMl11a0m2OIkmV191v9QmSUDvke2ng&oe=654048AB"
-                alt=""
-              />
-            </div>
-            <h3>Áo khoa mạng máy tính</h3>
-            <p>
-              Giá sản phẩm : <strong>99.000<sup>đ</sup> </strong>
-            </p>
-          </div>
-        </div>
-      </div>
-    </main>
-    <footer>
-      <div id="contact">
-          <p>@2023 - Copyrights by UIT</p>
-      </div>
-    </footer>
-  </body>
+    </div>
+  </main>
+  <footer>
+    <div id="contact">
+      <p>@2023 - Copyrights by UIT</p>
+    </div>
+  </footer>
+</body>
+
 </html>
