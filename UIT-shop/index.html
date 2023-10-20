@@ -5,7 +5,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>UIT Shop</title>
-  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="./assets/styles/style.css" />
+  <link rel="stylesheet" href="./assets/icons/themify-icons/themify-icons.css">
 </head>
 
 <body>
@@ -36,14 +37,13 @@
       <div class="item_container">
         <div class="item">
           <div class="item_img">
-            <img
-              src="https://dongphuchaianh.vn/wp-content/uploads/2022/02/dong-phuc-uit-hoc-vien.jpg"
-              alt="" />
+            <img src="https://dongphuchaianh.vn/wp-content/uploads/2022/02/dong-phuc-uit-hoc-vien.jpg" alt="" />
           </div>
           <h3>Áo UIT trắng</h3>
           <p>
             Giá sản phẩm : <strong>99.000<sup>đ</sup> </strong>
           </p>
+          <button class="buy-button">Đặt mua</button>
         </div>
         <div class="item">
           <div class="item_img">
@@ -55,6 +55,7 @@
           <p>
             Giá sản phẩm : <strong>99.000<sup>đ</sup> </strong>
           </p>
+          <button class="buy-button">Đặt mua</button>
         </div>
 
         <div class="item">
@@ -67,6 +68,7 @@
           <p>
             Giá sản phẩm : <strong>99.000<sup>đ</sup> </strong>
           </p>
+          <button class="buy-button">Đặt mua</button>
         </div>
 
 
@@ -85,6 +87,7 @@
           <p>
             Giá sản phẩm : <strong>199.000<sup>đ</sup> </strong>
           </p>
+          <button class="buy-button">Đặt mua</button>
         </div>
         <div class="item">
           <div class="item_img">
@@ -96,6 +99,7 @@
           <p>
             Giá sản phẩm : <strong>99.000<sup>đ</sup> </strong>
           </p>
+          <button class="buy-button">Đặt mua</button>
         </div>
         <div class="item">
           <div class="item_img">
@@ -107,17 +111,17 @@
           <p>
             Giá sản phẩm : <strong>99.000<sup>đ</sup> </strong>
           </p>
+          <button class="buy-button">Đặt mua</button>
         </div>
         <div class="item">
           <div class="item_img">
-            <img
-              src="https://httt.uit.edu.vn/wp-content/uploads/2020/11/IS-UIT-0030.jpg"
-              alt="" />
+            <img src="https://httt.uit.edu.vn/wp-content/uploads/2020/11/IS-UIT-0030.jpg" alt="" />
           </div>
           <h3>Áo khoa Hệ thống thông tin</h3>
           <p>
             Giá sản phẩm : <strong>99.000<sup>đ</sup> </strong>
           </p>
+          <button class="buy-button">Đặt mua</button>
         </div>
         <div class="item">
           <div class="item_img">
@@ -129,8 +133,9 @@
           <p>
             Giá sản phẩm : <strong>99.000<sup>đ</sup> </strong>
           </p>
+          <button class="buy-button">Đặt mua</button>
         </div>
-        
+
       </div>
     </div>
     <div class="container" id="accessories">
@@ -146,6 +151,7 @@
           <p>
             Giá sản phẩm : <strong>299.000<sup>đ</sup> </strong>
           </p>
+          <button class="buy-button">Đặt mua</button>
         </div>
         <div class="item">
           <div class="item_img">
@@ -157,27 +163,66 @@
           <p>
             Giá sản phẩm : <strong>29.000<sup>đ</sup> </strong>
           </p>
+          <button class="buy-button">Đặt mua</button>
         </div>
 
         <div class="item">
           <div class="item_img">
-            <img
-              src="https://www.uit.edu.vn/sites/vi/files/uploads/images/thumbs/202204/nhan_qua.jpg"
-              alt="" />
+            <img src="https://www.uit.edu.vn/sites/vi/files/uploads/images/thumbs/202204/nhan_qua.jpg" alt="" />
           </div>
           <h3>Cặp UIT viền vàng</h3>
           <p>
             Giá sản phẩm : <strong>199.000<sup>đ</sup> </strong>
           </p>
+          <button class="buy-button">Đặt mua</button>
         </div>
       </div>
     </div>
   </main>
   <footer>
     <div id="contact">
-      <p>@2023 - Copyrights by UIT</p>
+      <p>@21520762 - Phan Thanh Dương</p>
+      <p>@21520984 - Trần Đình Khánh</p>
+      <p>@21522140 - Hồ Nhật Huy</p>
+      <p>@21520504 - Phan Đình Thế Trung</p>
     </div>
   </footer>
+
+  <!-- Modal -->
+  <div class="modal js-modal">
+    <div class="modal-container js-modal-container">
+      <div class="modal-heading">
+        <div class="modal-heading-icon ti-bag text-white">Đặt hàng</div>
+      </div>
+
+      <div class="modal-close-button ti-close text-white js-modal-close-button"></div>
+
+      <div class="modal-content">
+        <lable for="quantity" class="modal-lable">
+          <i class="ti-shopping-cart"> Họ và tên</i>
+        </lable>
+        <input id="quantity" type="text" class="modal-input" placeholder="Nguyễn Văn An">
+
+        <lable for="email" class="modal-lable">
+          <i class="ti-user"> Số điện thoại</i>
+        </lable>
+        <input id="email" type="text" class="modal-input" placeholder="0987654321">
+
+        <div class="modal-pay-button text-white">
+          ĐẶT MUA
+          <i class="ti-check"></i>
+        </div>
+
+        <div class="modal-footer">
+          Need <a href="">help?</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="./assets/scripts/script.js"></script>
 </body>
 
 </html>
