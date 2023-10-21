@@ -22,3 +22,12 @@ modal.click(hideTicketButton)
 modalContainer.click(function (event) {
     event.stopPropagation();
 })
+
+// TOAST HANDLER
+function myFunction() {
+    var x = $("#snackbar");
+    x.addClass('show');
+    setTimeout(function(){ 
+        x.removeClass('show');
+    }, 3000);
+  }
